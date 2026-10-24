@@ -28,8 +28,20 @@ jobs:
       - name: Install dependencies
         run: pip install requests Pillow
 
+      
       - name: Sync videos
-        run: python scripts/sync_videos.py
+        run: |
+          echo "DIAG 1: Shell started"
+          pwd
+          ls -l scripts/sync_videos.py
+          head -n 3 scripts/sync_videos.py
+          python -u -c "print('DIAG 2: Python started', flush=True)"
+          set +e
+          timeout 30s python -u scripts/sync_videos.py
+          status=$?
+          echo "DIAG 3: Script exit code = $status"
+          exit "$status"
+          
 
       - name: Commit changes
         run: |
