@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BuddieFun ADMIN</title>
+
+<link rel="icon" href="assets/icon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+
+</head>
+<body>
+
+<header class="topbar">
+
+    <a href="index.html" class="logo">BuddieFun</a>
+
+    <div class="cms-title">CMS</div>
+
+</header>
+
+<main class="admin-page">
+
+    <section class="admin-card">
+
+        <h2>Add New Video</h2>
+
+        <form id="videoForm">
+
+            <label for="cmsPassword">CMS Password</label>
+            <input id="cmsPassword" type="password" autocomplete="current-password" placeholder="Password admin CMS" required>
+
+            <label>Video Title</label>
+            <input id="title" type="text" placeholder="BBW XXX HOT" required>
+
+            <label>Video URL</label>
+            <input id="videyUrl" type="text" placeholder="https://example.com/video.mp4" required>
+
+            <label>Views</label>
+            <input id="views" type="text" placeholder="Otomatis: 50K–900K" readonly required>
+
+            <label for="duration">Duration (otomatis atau manual, contoh 12:35)</label>
+            <input id="duration" type="text" placeholder="Otomatis dari metadata; isi manual jika gagal (mm:ss atau hh:mm:ss)" pattern="(?:\d{1,2}:)?[0-5]?\d:[0-5]\d" title="Gunakan format mm:ss atau hh:mm:ss, contoh 12:35 atau 1:02:35" required>
+
+            <label>Thumbnail (WEBP/JPG/PNG)</label>
+            <input id="thumbnail" type="file" accept="image/*" required>
+
+            <div id="thumbPreview" class="thumb-preview"></div>
+
+            <!-- TOMBOL GENERATE -->
+            <button type="submit" class="save-btn">
+                Generate Video JSON
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="admin-card">
+
+        <div class="output-header">
+            <h2>Generated JSON</h2>
+
+            <!-- FIX -->
+            <button id="copyJson" type="button">Copy</button>
+
+        </div>
+
+        <textarea id="jsonOutput" readonly></textarea>
+
+    </section>
+
+    <section class="admin-card">
+
+        <div class="output-header">
+            <h2>Database Preview</h2>
+
+            <!-- FIX -->
+            <button id="downloadJson" type="button">
+                Download videos.json
+            </button>
+
+        </div>
+
+        <div id="videoList" class="video-list"></div>
+
+    </section>
+
+</main>
+
+<script src="assets/js/encoder.js"></script>
+<script src="assets/js/cms-config.js"></script>
+<script src="assets/js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuddieFun</title>
+
+  <link rel="icon" href="assets/icon/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function(s) {
+      s.dataset.zone = '11945257';
+      s.src = 'https://al5sm.com/tag.min.js';
+    })([document.documentElement, document.body]
+      .filter(Boolean)
+      .pop()
+      .appendChild(document.createElement('script')));
+  </script>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+
+    <a href="index.html" class="logo">BuddieFun</a>
+
+    <div class="search-box">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search video..."
+        autocomplete="off">
+    </div>
+
+  </header>
+
+
+  <!-- VIDEO GRID -->
+  <main class="container">
+
+    <section id="videoGrid" class="video-grid"></section>
+
+    <div id="loadingGrid" class="loading-grid">
+
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+      <div class="loading-card"></div>
+
+    </div>
+
+  </main>
+
+
+  <!-- VIDEO TEMPLATE -->
+  <template id="videoTemplate">
+
+    <article class="video-card">
+
+      <a class="video-link">
+
+        <div class="thumb-box">
+
+          <img class="thumb" loading="lazy">
+
+          <span class="duration"></span>
+
+        </div>
+
+        <div class="meta">
+
+          <h3 class="title"></h3>
+
+          <p class="views"></p>
+
+        </div>
+
+      </a>
+
+    </article>
+
+  </template>
+
+
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4425861,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4425861&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+
+  <!-- Basic browser shortcut/context-menu deterrent -->
+  <script>
+    document.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      const key = (event.key || "").toLowerCase();
+      if (event.ctrlKey && key === "u") {
+        event.preventDefault();
+      }
+    });
+  </script>
+
+</body>
+</html>
