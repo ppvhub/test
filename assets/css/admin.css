@@ -1,0 +1,232 @@
+/* =====================================================
+   HYLOOKS v1.1 FINAL PRODUCTION (MASTER LOCKED)
+   Admin CMS CSS
+   ===================================================== */
+
+.admin-page{
+    max-width:1100px;
+    margin:0 auto;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.cms-title{
+    color:#FFFFFF;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ================= CARD ================= */
+
+.admin-card{
+    background:#101010;
+    border:1px solid #1A1A1A;
+    border-radius:16px;
+    padding:22px;
+}
+
+.admin-card h2{
+    font-size:18px;
+    margin-bottom:18px;
+    color:#FFFFFF;
+}
+
+/* ================= FORM ================= */
+
+#videoForm{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+#videoForm label{
+    font-size:13px;
+    color:#A0A0A0;
+    font-weight:600;
+}
+
+#videoForm input{
+    width:100%;
+    height:44px;
+    background:#151515;
+    border:1px solid #262626;
+    border-radius:12px;
+    padding:0 14px;
+    color:#FFFFFF;
+    font-size:14px;
+    outline:none;
+}
+
+#videoForm input:focus{
+    border-color:#FFD54A;
+}
+
+#thumbnail{
+    height:auto;
+    padding:10px;
+    cursor:pointer;
+}
+
+/* ================= PREVIEW ================= */
+
+.thumb-preview{
+    width:280px;
+    aspect-ratio:16/9;
+    background:#161616;
+    border:1px dashed #303030;
+    border-radius:14px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.thumb-preview img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ================= BUTTON ================= */
+
+.save-btn{
+    margin-top:6px;
+    height:46px;
+    border:none;
+    border-radius:12px;
+    background:#FFD54A;
+    color:#000000;
+    font-weight:700;
+    font-size:14px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.save-btn:hover{
+    opacity:.92;
+}
+
+/* ================= OUTPUT ================= */
+
+.output-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:14px;
+}
+
+.output-header button{
+    background:#1D1D1D;
+    border:none;
+    color:#FFFFFF;
+    padding:8px 14px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:13px;
+}
+
+.output-header button:hover{
+    background:#2A2A2A;
+}
+
+#jsonOutput{
+    width:100%;
+    min-height:240px;
+    resize:vertical;
+    background:#0D0D0D;
+    border:1px solid #222222;
+    border-radius:12px;
+    color:#5EFF8F;
+    padding:16px;
+    font-size:13px;
+    font-family:Consolas, monospace;
+    line-height:1.5;
+}
+
+/* ================= DATABASE LIST ================= */
+
+.video-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.video-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:10px;
+    background:#151515;
+    border-radius:12px;
+}
+
+.video-item img{
+    width:140px;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.video-info{
+    flex:1;
+}
+
+.video-info h3{
+    font-size:14px;
+    color:#FFFFFF;
+    margin-bottom:4px;
+}
+
+.video-info p{
+    font-size:12px;
+    color:#888888;
+}
+
+.video-actions{
+    display:flex;
+    gap:8px;
+}
+
+.video-actions button{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:10px;
+    background:#202020;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+.video-actions button:hover{
+    background:#303030;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .admin-page{
+        padding:14px;
+    }
+
+    .thumb-preview{
+        width:100%;
+    }
+
+    .video-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .video-item img{
+        width:100%;
+    }
+
+    .video-actions{
+        width:100%;
+        justify-content:flex-end;
+    }
+
+}

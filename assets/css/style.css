@@ -1,0 +1,342 @@
+/* =====================================================
+   HYLOOKS v1.1 FINAL PRODUCTION (MASTER LOCKED)
+   Homepage CSS
+   ===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#080808;
+    --header:#0B0B0B;
+    --card:#111111;
+    --text:#FFFFFF;
+    --text2:#8A8A8A;
+    --line:#1A1A1A;
+    --search:#141414;
+    --yellow:#FFD54A;
+
+    --radius:14px;
+}
+
+html,body{
+    width:100%;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.topbar{
+
+    width:100%;
+    height:64px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    background:var(--header);
+
+    border-bottom:1px solid #101010;
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.logo{
+
+    color:var(--yellow);
+
+    text-decoration:none;
+
+    font-size:27px;
+    font-weight:800;
+    letter-spacing:-.5px;
+
+}
+
+.search-box{
+
+    width:270px;
+    flex-shrink:0;
+
+}
+
+.search-box input{
+
+    width:100%;
+    height:38px;
+
+    border:none;
+    outline:none;
+
+    border-radius:999px;
+
+    background:var(--search);
+
+    color:white;
+
+    padding:0 18px;
+
+    font-size:13px;
+
+}
+
+.search-box input::placeholder{
+    color:#666;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    width:100%;
+    max-width:1550px;
+
+    margin:auto;
+
+    padding:18px;
+
+}
+
+/* ================= VIDEO GRID ================= */
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+/* ================= CARD ================= */
+
+.video-card{
+
+    width:100%;
+
+}
+
+.video-link{
+
+    text-decoration:none;
+    color:white;
+
+}
+
+/* Thumbnail */
+
+.thumb-box{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    background:#151515;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+}
+
+.thumb{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.25s ease;
+
+    display:block;
+
+}
+
+.video-card:hover .thumb{
+
+    transform:scale(1.05);
+
+}
+
+/* Duration */
+
+.duration{
+
+    position:absolute;
+
+    right:8px;
+    bottom:8px;
+
+    padding:3px 7px;
+
+    background:rgba(0,0,0,.75);
+
+    border-radius:5px;
+
+    font-size:11px;
+    font-weight:600;
+
+}
+
+/* Meta */
+
+.meta{
+
+    margin-top:10px;
+
+}
+
+.title{
+
+    font-size:15px;
+    font-weight:700;
+
+    line-height:1.35;
+
+    color:white;
+
+    display:-webkit-box;
+
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+
+    overflow:hidden;
+
+    min-height:40px;
+
+}
+
+.views{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:var(--text2);
+
+}
+
+/* ================= LOADING ================= */
+
+.loading-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.loading-card{
+
+    aspect-ratio:16/10;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        90deg,
+        #141414 0%,
+        #1D1D1D 50%,
+        #141414 100%
+    );
+
+    background-size:300% 100%;
+
+    animation:loading 1.3s infinite;
+
+}
+
+@keyframes loading{
+
+    from{
+        background-position:300% 0;
+    }
+
+    to{
+        background-position:-300% 0;
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1280px){
+
+    .video-grid,
+    .loading-grid{
+        grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    }
+
+}
+
+@media(max-width:768px){
+
+    .topbar{
+
+        padding:0 14px;
+
+        height:58px;
+
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .search-box{
+        width:170px;
+    }
+
+    .container{
+        padding:14px;
+    }
+
+    .video-grid,
+    .loading-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:14px;
+
+    }
+
+    .title{
+        font-size:14px;
+    }
+
+    .views{
+        font-size:12px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .search-box{
+        width:145px;
+    }
+
+    .search-box input{
+
+        height:34px;
+
+        font-size:12px;
+
+    }
+
+}
