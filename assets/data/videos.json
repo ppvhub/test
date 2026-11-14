@@ -1,7 +1,187 @@
 {
   "version": "1.3",
-  "updated": "2026-11-13T19:38:36.469097+00:00",
+  "updated": "2026-11-14T13:35:34.747989+00:00",
   "videos": [
+    {
+      "id": "video276",
+      "title": "Kapri Styles",
+      "thumb": "assets/thumb/video276.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "cSY5bAoTZwRxCXYlKjV6IDouU15WKDgqazgwIWBpDERCOC0g",
+        "iv": "HYL276FOBTVE",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "77004",
+        "url": "https://baddiehub.com/kapri-styles-3/",
+        "date": "2026-11-14T13:21:38+00:00"
+      }
+    },
+    {
+      "id": "video277",
+      "title": "KPTheGoat",
+      "thumb": "assets/thumb/video277.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "cjw8YmkgQ0dZLnYlKS9/LiwgUl5WKDgqaCI1L3ZnDURCOC0g",
+        "iv": "HYL277HYLQLF",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "77001",
+        "url": "https://baddiehub.com/kpthegoat-5/",
+        "date": "2026-11-14T13:21:33+00:00"
+      }
+    },
+    {
+      "id": "video278",
+      "title": "Debree",
+      "thumb": "assets/thumb/video278.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "cTYiGXZsDQ8GenYlKiVhVTI9XV5WKDgqaygrVGh6AkRCOC0g",
+        "iv": "HYL278UG7OFE",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76998",
+        "url": "https://baddiehub.com/debree-15/",
+        "date": "2026-11-14T13:21:29+00:00"
+      }
+    },
+    {
+      "id": "video279",
+      "title": "Honey Hart",
+      "thumb": "assets/thumb/video279.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "YTwhfnt2DAUDdHYlOi9iMjYsXF5WKDgqeyIoM2xrA0RCOC0g",
+        "iv": "HYL279DCPLLU",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76995",
+        "url": "https://baddiehub.com/honey-hart-2/",
+        "date": "2026-11-14T13:21:25+00:00"
+      }
+    },
+    {
+      "id": "video280",
+      "title": "itsyoli",
+      "thumb": "assets/thumb/video280.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "cjo9ZTEvYl1/DXYlKSl+KTc9VVFWKDgqaCQ0KG16CktCOC0g",
+        "iv": "HYL280UBKPJF",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76992",
+        "url": "https://baddiehub.com/itsyoli-4/",
+        "date": "2026-11-14T13:21:20+00:00"
+      }
+    },
+    {
+      "id": "video281",
+      "title": "Carmela Clutch",
+      "thumb": "assets/thumb/video281.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "ZTQmGHRyBA8KdHYlPidlVDMsVFFWKDgqfyovVWlrC0tCOC0g",
+        "iv": "HYL281DF6KDQ",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76989",
+        "url": "https://baddiehub.com/carmela-clutch-21/",
+        "date": "2026-11-14T13:21:15+00:00"
+      }
+    },
+    {
+      "id": "video282",
+      "title": "resorude",
+      "thumb": "assets/thumb/video282.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "AykrYW1iAg4CfHYlWDpoLS89V1FWKDgqGTciLHV6CEtCOC0g",
+        "iv": "HYL282UZOFY7",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76986",
+        "url": "https://baddiehub.com/resorude/",
+        "date": "2026-11-14T13:21:11+00:00"
+      }
+    },
+    {
+      "id": "video283",
+      "title": "Ms Delicious",
+      "thumb": "assets/thumb/video283.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "bTY/aS00XVdBOXYlNiV8JTM4VlFWKDgqdyg2JGl/CUtCOC0g",
+        "iv": "HYL283PFGRFY",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76983",
+        "url": "https://baddiehub.com/ms-delicious-2/",
+        "date": "2026-11-14T13:21:07+00:00"
+      }
+    },
+    {
+      "id": "video284",
+      "title": "SlimThickVic & Bunny Madison",
+      "thumb": "assets/thumb/video284.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "eEIge1AhQlZHLnYlI1FjN0YgUVFWKDgqYlwpNhxnDktCOC0g",
+        "iv": "HYL284H3UM2L",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76980",
+        "url": "https://baddiehub.com/slimthickvic-bunny-madison/",
+        "date": "2026-11-14T13:21:02+00:00"
+      }
+    },
+    {
+      "id": "video285",
+      "title": "Luna Rose",
+      "thumb": "assets/thumb/video285.webp",
+      "views": "—",
+      "duration": "",
+      "video": {
+        "provider": "videy",
+        "encrypted": "bTc1YnV2VGhkAHYlNiR2LkdcUFFWKDgqdyk8Lx0bD0tCOC0g",
+        "iv": "HYL28542LXGY",
+        "ver": 1
+      },
+      "source": {
+        "site_id": "76977",
+        "url": "https://baddiehub.com/luna-rose-5/",
+        "date": "2026-11-14T13:20:56+00:00"
+      }
+    },
     {
       "id": "video266",
       "title": "vaeak",
